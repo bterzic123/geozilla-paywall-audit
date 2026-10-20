@@ -476,8 +476,8 @@ html[lang=hi] .gz-btn{font-family:'Noto Sans Devanagari','Inter',sans-serif}
   <div class="wrap">
     <div class="eyebrow">Paywall Audit · October 2026</div>
     <div class="co"><img src="img/icon.jpg" alt="GeoZilla app icon"><h1>GeoZilla</h1></div>
-    <p class="lede"><b class="nm-hey">Hey Ksenia,</b> here are five ideas for your paywall, each backed by data from 78,000+ paywalls.</p>
-    <div class="meta">Prepared <span class="nm-for">for <b>Ksenia</b> </span>by <b>Adapty</b> · based on your live paywall, your App Store listing and State of Paywalls 2026</div>
+    <p class="lede"><b>Hey GeoZilla team,</b> here are five ideas for your paywall, each backed by data from 78,000+ paywalls.</p>
+    <div class="meta">Prepared for the <b>GeoZilla team</b> by <b>Adapty</b> · based on your live paywall, your App Store listing and State of Paywalls 2026</div>
     <div class="herobtns"><button class="ghostbtn" data-demo><span class="pl"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></svg></span>Watch the 30-second walkthrough</button></div>
     <div class="stats">
       <div class="stat"><b>78,000+</b><span>paywalls in State of<br>Paywalls 2026</span></div>
@@ -579,7 +579,7 @@ html[lang=hi] .gz-btn{font-family:'Noto Sans Devanagari','Inter',sans-serif}
         <span class="no">03</span>
         <span>
           <h3>Put the role they picked in the headline</h3>
-          <p>Two screens before the paywall, people tell you who they are protecting: children, elderly relatives, a partner, friends. The paywall then says “Get unlimited access” to all of them. Your own role subtitles make better headlines, like <span class="nm-ex">“Ksenia, keep your children safe”</span>.</p>
+          <p>Two screens before the paywall, people tell you who they are protecting: children, elderly relatives, a partner, friends. The paywall then says “Get unlimited access” to all of them. Your own role subtitles make better headlines, like “Keep your children safe” for a parent.</p>
           <a class="rchip rep" href="#" target="_blank" rel="noopener"><span>📊</span><span><b>State of Paywalls 2026</b> · Only 2% of top paywalls use what the app knows about the user.</span></a>
           <span class="seeit">See the screen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </span>
@@ -767,13 +767,10 @@ var REPORT='https://adapty.io/state-of-paywalls/?utm_source=paywall-audit&utm_me
 document.querySelectorAll('a.rep').forEach(function(a){ a.href=REPORT; });
 document.querySelectorAll('.idea a.rep').forEach(function(a){ a.addEventListener('click',function(e){ e.stopPropagation(); }); });
 
-/* who the page addresses: ?for=<first name> */
+/* the overview addresses the company team; only the prototype uses the lead's first name (?for=<first name>) */
 function clean(v,max){ return (v||'').replace(/[^A-Za-zÀ-ÖØ-öø-ÿ\s-]/g,'').replace(/\s+/g,' ').trim().slice(0,max); }
 var qs=new URLSearchParams(location.search);
 var NAME=clean(qs.get('for'),20)||'Ksenia';
-document.querySelector('.nm-hey').textContent='Hey '+NAME+',';
-document.querySelector('.nm-for').innerHTML='for <b></b> '; document.querySelector('.nm-for b').textContent=NAME;
-document.querySelector('.nm-ex').textContent='“'+NAME+', keep your children safe”';
 
 /* ================= copy, per language (phone screens only) ================= */
 var LANGS=['en','hi','pt'];

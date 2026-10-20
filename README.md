@@ -34,4 +34,4 @@ Impact ranges are observed lifts from winning A/B tests in State of Paywalls 202
 python3 -m http.server 8000
 ```
 
-Then open http://localhost:8000. Add `?for=<first name>` to change who the page addresses.
+Then open http://localhost:8000. Add `?for=<first name>` to change the name shown in the prototype's paywall and offer headlines.
